@@ -1,101 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Operators in JS</h1>
 
     <script>
+      // Types of operators
 
-        // Types of operators
+      // 1) Arithmatic Opertors
 
-        // 1) Arithmatic Opertors
+      // + , - , * , %, /, ++ , -- , **
 
-        // + , - , * , %, /, ++ , -- , **
+      // E.g:
 
+      // var a = 10, b = 20;
 
-        // E.g: 
+      // console.log("Addition of a & b is ", a + b);
+      // console.log("Subtraction of a & b is ", a - b);
+      // console.log("Multiplication ", a * b);
+      // console.log("Power ", a ** b);
+      // console.log("Division ", a / b);
+      // console.log("Modulus ", a % b);
 
-            // var a = 10, b = 20;
+      // increment operator
 
-            // console.log("Addition of a & b is ", a + b);
-            // console.log("Subtraction of a & b is ", a - b);
-            // console.log("Multiplication ", a * b);
-            // console.log("Power ", a ** b);
-            // console.log("Division ", a / b);
-            // console.log("Modulus ", a % b);
+      // console.log(a++); // print : 10 , value: 11
+      // console.log(++a); // print : 12 , value : 12
+      // console.log(a++); // print : 12 , value : 13
+      // console.log(a); // print : 13, value: 13
+      // console.log(++a); // print : 14 , value : 14
+      // console.log(a++); // print : 14 : value : 15
 
+      // pre inc / post inc
+      // ++a / a++
 
-            // increment operator
+      // Decrement operator
+      // console.log(a--); // print : 10 , value: 9
+      // console.log(--a); // print : 8 , value : 8
+      // console.log(a++); // print : 8 , value : 9
+      // console.log(a--); // print : 9, value: 8
+      // console.log(--a); // print : 7 , value : 7
+      // console.log(a--); // print : 7 : value : 6
 
+      // 2) Assignment Operators
 
-            // console.log(a++); // print : 10 , value: 11
-            // console.log(++a); // print : 12 , value : 12
-            // console.log(a++); // print : 12 , value : 13
-            // console.log(a); // print : 13, value: 13
-            // console.log(++a); // print : 14 , value : 14
-            // console.log(a++); // print : 14 : value : 15
-            
-            
-            // pre inc / post inc
-            // ++a / a++
-            
-            // Decrement operator
-            // console.log(a--); // print : 10 , value: 9
-            // console.log(--a); // print : 8 , value : 8
-            // console.log(a++); // print : 8 , value : 9
-            // console.log(a--); // print : 9, value: 8
-            // console.log(--a); // print : 7 , value : 7
-            // console.log(a--); // print : 7 : value : 6
+      // = , +=, -=, *=, **=, ++=, --=, %=, /=
 
+      // var a = 10;
 
+      // a = 20
 
+      // a += 20;
 
-        // 2) Assignment Operators
+      // a += 4;
 
+      // a -= 20
 
-            // = , +=, -=, *=, **=, ++=, --=, %=, /=
+      // console.log(a)
 
-    
-        // var a = 10;
+      // 3) Logical operators
 
-        // a = 20
+      // ! (NOT) , && (AND) , || (OR)
 
-        // a += 20;
+      // 4) Comparison operators
 
-        // a += 4;
+      // == , === , !=, !==, > , < , >= , <=
 
-        // a -= 20
-           
+      // var a = 10; //string
+      // var b = 10; // number
 
-        // console.log(a)
+      // console.log(a !== b);
 
+      // console.log(a > b)
+      // console.log(b < a)
 
+      // console.log(a <= b);
 
+      // 5) Nullish coalesal Operator
 
-        // 3) Comparison operators
+      // var name = null;
 
-        // ! (NOT) , && (AND) , || (OR)
+      // var newName = null ?? "Sample"
 
+      // console.log("Value of name is : ",newName)
 
-        // == , === , !=, !==, > , < , >= , <=
+      // 6)Optional Chaining
 
+      // const employee = {
 
-        var a = 10; //string
-        var b = 10; // number
+      // }
 
-        // console.log(a !== b);
+      // console.log("Name of Employee is : ", employee?.name) // membership operator (.)
 
-        // console.log(a > b)
-        // console.log(b < a)
+      // if(employee?.name){
+      //     console.log("Hello")
+      // }
 
-        // console.log(a <= b);
+      // 7) Ternary Operator
+
+      // syntax
+
+      // condition ? true : false;
+
+      // example :
+
+      // var age = 19;
+
+      // age >= 18 ? console.log('You are eligible for voting :)') : console.log('You are not eligible for voting :( ');
+
+      // example 2 :
+      // var payment = 11;
+
+      // payment > 100 ? console.log("10 % discount") : console.log("5 % discount");
+
+      // example: 3
+
+      // (price * discount) / 100  = discount value ==== 5
+
+      // finalPrice = price - discountPrice;  100 - 5
+
+      // finalPrice = 95
+
+    //   var price, discount, discountPrice, finalPrice;
+
+    //   price = 5000;
+
+    //   discount = price >= 100 ? 10 : 5;
+
+    //   discountPrice = (price * discount) / 100;
+
+    //   finalPrice = price - discountPrice;
+
+    //   console.log("Final price after Discount : ", finalPrice);
 
 
     </script>
-
-</body>
+  </body>
 </html>
