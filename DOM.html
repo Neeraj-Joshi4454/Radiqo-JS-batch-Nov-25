@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="heading1">Document object model</h1> -->
+
+    <!-- <p class="para">Lorem ipsum dolor sit. 1</p>
+    <p class="para">Lorem ipsum dolor sit. 2</p>
+    <p class="para">Lorem ipsum dolor sit. 3</p>
+    <p class="para">Lorem ipsum dolor sit. 4</p>
+    <p class="para">Lorem ipsum dolor sit. 5</p> -->
+
+
+
+    <!-- <h1 id="simple">Simple heading</h1>
+
+    <button onclick="handleClick()">Change Color</button> -->
+
+
+    <button onclick="addition()">Addtion</button>
+    <button onclick="multiplication()">Multiplication</button>
+
+
+
+
+    <script>
+
+
+        // console.log("Document", document);
+
+
+        // types of DOM manuplation techniques
+
+
+        // 1) get element by ID
+
+        // var element = document.getElementById("heading1");
+
+        // console.log(element)
+
+
+
+        // 2) get element by classname
+
+        // var para = document.getElementsByClassName("para");
+        // console.log("para", para[4]);
+
+
+
+        // 3) get element by tagname
+
+        // var para = document.getElementsByTagName('p');
+        // console.log("By Tagname : ", para);
+
+        // 4) QuerySelector
+
+        // var heading = document.querySelector('#heading1');
+
+
+        // var heading = document.querySelectorAll('p');
+        
+        
+        // console.log("heading : ", heading)
+        
+        // 5) Query Selector all
+        // var heading = document.querySelectorAll('.para');
+
+
+
+        // function handleClick(){
+        // //    var heading = document.getElementById("simple");
+        // //    heading.style.color="red"
+
+        // // window.alert("Item added to cart")
+        // }
+
+
+        function addition(){
+            var num1 = Number(window.prompt('Enter first number'));
+            var num2 = Number(window.prompt('Enter second number'));
+
+            var ans = num1 + num2;
+
+            alert(ans)
+            
+        }
+
+        function multiplication(){
+            
+            var num1 = Number(window.prompt('Enter first number :'));
+            var num2 = Number(window.prompt('Enter second number : '));
+
+            var ans = num1 * num2;
+
+            alert(ans)
+        }
+
+
+
+    </script>
+</body>
+</html>
