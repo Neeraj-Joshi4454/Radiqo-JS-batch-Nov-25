@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Contact Form</h1>
+
+        <label for="fName">First Name</label>
+        <input type="text" name="fName" required id="fName">
+
+        <label for="lName">Last Name</label>
+        <input type="text" name="lName" required id="lName">
+
+
+        <button onclick="handleSubmit()">Submit</button><br><br><br><br>
+
+
+        <h1>Welcome <span id="fullName"></span> </h1>
+
+    
+
+
+
+    <script>
+
+        function handleSubmit(){
+              
+            var fname = document.getElementById("fName").value;
+            var lname = document.getElementById("lName").value;
+
+
+            if(fname === '' && lname === ''){
+                alert('Please fill the details first')
+            }
+
+            // var fnameplaceholder = document.getElementById('fNamePlaceholder');
+            // fnameplaceholder.innerHTML=fname;
+
+            // var lnameplaceholder = document.getElementById('lNamePlaceholder');
+            // lnameplaceholder.innerHTML = lname;
+
+            document.getElementById('fullName').innerHTML = fname + " " + lname
+
+        }
+
+
+    </script>
+</body>
+</html>
