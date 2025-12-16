@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENTS</title>
+
+    <style>
+        .line-clamp {
+           color: red;
+        }
+
+        .blue{
+            color : blue;
+        }
+    </style>
+</head>
+<!-- <body onload="greet()"> -->
+<body>
+
+    <h1>JS EVENTS</h1>
+
+    <div>
+        <p id="para1" class="line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque autem cumque labore sequi debitis qui quas harum! Ad eveniet commodi voluptatum sunt, assumenda similique dolore harum quidem facere officiis. Distinctio?</p>
+    </div>
+
+    <button onclick="changeColor()">Hide Para</button>
+
+
+
+    <script>
+        function hidePara(){
+            var para1 = document.getElementById('para1');
+
+            para1.style.display = "none";
+        }
+
+        function changeColor(){
+            var para1 = document.getElementById('para1');
+
+            para1.classList.toggle('blue')
+        }
+
+    </script>
+    
+</body>
+</html>

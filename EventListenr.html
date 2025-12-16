@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Event Listener</h1>
+
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae incidunt doloribus consequatur optio quaerat enim ad a sunt neque possimus veritatis debitis odit ipsa atque et vero ratione perspiciatis commodi, necessitatibus sint delectus? Blanditiis non voluptates quas optio aut.</p>
+
+    <button  id="btn1">Hide Para</button>
+
+
+
+    <script>
+
+        var btn1 = document.getElementById('btn1');
+
+        function hidePara(){
+            var para1 = document.getElementById('para1');
+            para1.style.display = "none";
+        }
+
+        btn1.addEventListener('mouseover' , hidePara);
+
+
+
+        
+
+
+    </script>
+
+</body>
+</html>
