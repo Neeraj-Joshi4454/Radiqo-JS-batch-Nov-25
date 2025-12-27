@@ -52,17 +52,12 @@
 //     }
 // ]
 
-
-
 // users.map((user,i) => {
 //     console.log("user is : ", user.name);
 //     console.log("position of user is : ", i);
 // })
 
-
-
 // filter
-
 
 // const users = [
 //     {
@@ -82,7 +77,6 @@
 //     }
 // ]
 
-
 // const response = users.filter((data , i) => {
 //     return data.city === "Pune";
 // })
@@ -91,16 +85,13 @@
 //     document.getElementById('user').innerHTML+=`<h1>${data.name}</h1>`
 // })
 
-
 // const array1 = ["one", "Two"];
 
 // const array2 = ["Three", "Four"];
 
-
 // const array3 = [...array1,...array2, "Five", "Six"];
 
 // console.log(array3)
-
 
 // const obj1 = {
 //     id : 1,
@@ -111,7 +102,6 @@
 //     city: "Pune"
 // }
 
-
 // const obj3 = {
 //     ...obj1,
 //     ...obj2,
@@ -120,7 +110,49 @@
 
 // console.log(obj3)
 
+// let array1 = ["ONE", "TWO", "THREE", "FOUR"];
+
+// const filteredItems = array1.filter((element) => {
+//     return element !== 'THREE'
+// })
+
+// console.log("Filtered Items : ", filteredItems)
+
+// array1.forEach((element) => {
+//     console.log("Element", element)
+// })
+
+
+// template litterals
+
+// const courseDetails = {
+//   course: "React Frontend Dev",
+//   duration: "3 Months",
+// };
+
+// console.log(
+//   "My course name is : course  and duraiton for this course is : duration"
+// );
+
+// console.log(
+//   `My course name is : ${courseDetails.course}  and duraiton for this course is : ${courseDetails.duration}`
+// );
 
 
 
+// const details = [
+//     {id: 1, product : "Laptop", price:80000},
+//     {id: 2, product : "phone", price:150000},
+//     {id: 3, product : "earphone", price:4000},
+// ]
 
+
+// details.map((product) => {
+//     console.log(`Product name : ${product.product} , price : ${product.price}`)
+// })
+
+
+
+// const productName = "Lapotp";
+
+// console.log(productName)
